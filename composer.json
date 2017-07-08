@@ -1,0 +1,40 @@
+{
+  "name": "bastibuck/contao-force-password-change",
+  "type": "contao-module",
+  "description": "Force members to change their initial password after first login",
+  "keywords": [
+    "password",
+    "import",
+    "security"
+  ],
+  "homepage": "https://github.com/bastibuck/contao-force-password-change",
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Basti Buck",
+      "email": "mail@bastibuck.de",
+      "homepage": "http://bastibuck.de",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/bastibuck/contao-force-password-change/issues"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "contao/core-bundle": "~3.5  || ~4.1",
+    "contao-community-alliance/composer-plugin": "~2.4 || ~3.0"
+  },
+  "autoload": {
+    "classmap": [
+      ""
+    ]
+  },
+  "extra":{
+    "contao":{
+      "sources":{
+        "":"system/modules/force_pass_change"
+      }
+    }
+  }
+}
