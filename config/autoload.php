@@ -23,6 +23,9 @@ ClassLoader::addNamespaces(array
  */
 ClassLoader::addClasses(array
 (
+	// Classes
+	'Bastibuck\ForcePassChangeHooks'  => 'system/modules/force_pass_change/classes/ForcePassChangeHooks.php',
+
 	// Modules
 	'Bastibuck\ModuleForcePassChange' => 'system/modules/force_pass_change/modules/ModuleForcePassChange.php',
 ));

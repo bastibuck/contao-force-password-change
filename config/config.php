@@ -11,3 +11,4 @@
 $GLOBALS['FE_MOD']['user']['force_pass_change'] = 'ModuleForcePassChange';
 
 // Hooks
+$GLOBALS['TL_HOOKS']['generatePage'][] = array('ForcePassChangeHooks', 'memberChangePass');
