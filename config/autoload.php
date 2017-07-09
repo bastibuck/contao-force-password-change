@@ -33,5 +33,5 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'member_force_pass_change' => 'system/modules/force_pass_change/templates',
+	'mod_force_passchange' => 'system/modules/force_pass_change/templates',
 ));

@@ -10,13 +10,11 @@
 namespace Bastibuck;
 
 // Palettes
-$GLOBALS['TL_DCA']['tl_module']['palettes']['force_pass_change'] = '
-  {type_legend},name,headline,type;
-  {pass_change_legend},pass_change_text;
-  {redirect_legend},jumpTo;
-  {protected_legend:hide},protected;
-  {expert_legend:hide},invisible,cssID,space;
-';
+$GLOBALS['TL_DCA']['tl_module']['palettes']['force_pass_change'] = str_replace (
+  ';{redirect_legend}',
+  ';{pass_change_legend:hide},pass_change_text;{redirect_legend}',
+  $GLOBALS['TL_DCA']['tl_module']['palettes']['changePassword'] // get original changePassword palettes
+);
 
 // Fields
 $GLOBALS['TL_DCA']['tl_module']['fields']['pass_change_text'] = array

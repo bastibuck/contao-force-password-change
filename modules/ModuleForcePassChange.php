@@ -9,7 +9,9 @@
 
 namespace Bastibuck;
 
-class ModuleForcePassChange extends \Module {
+class ModuleForcePassChange extends \ModuleChangePassword {
+
+  protected $strTemplate = 'mod_force_passchange';
 
 
   /**
@@ -38,6 +40,10 @@ class ModuleForcePassChange extends \Module {
    */
   public function compile() {
 
-    return parent::generate();
+    // get additional text field content
+    $this->Template->pass_change_text = $this->pass_change_text;
+
+    // return original function
+    parent::compile();
   }
 }
