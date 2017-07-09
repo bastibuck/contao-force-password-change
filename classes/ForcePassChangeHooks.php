@@ -36,16 +36,23 @@ class ForcePassChangeHooks extends \Frontend
 
       if($objPage->id != $jumpTo)
       {
-        // get objPage of jumpTo page
-        $objSite = $this->Database
-          ->prepare('SELECT id,alias FROM tl_page WHERE id=?')
-          ->limit(1)
-          ->execute($jumpTo);
+        // get jumpTo page
+        $objJumpTo = \PageModel::findOneById($jumpTo);
 
         // redirect member to pass change page
-        $this->redirect($this->generateFrontendUrl($objSite->fetchAssoc()));
+        $this->redirect($this->generateFrontendUrl($objJumpTo->row()));
       }
     }
+  }
 
+  /**
+   * marks that the member has changed it's password
+   */
+  public function setNewPassword($objUser, $strPassword) {
+
+    // set changed password checkbox to true
+    $this->Database
+      ->prepare('UPDATE tl_member SET passChanged=? WHERE id=? ')
+      ->execute(1, $objUser->id);
   }
 }
