@@ -8,4 +8,4 @@
  */
 
 // Fields
-$GLOBALS['TL_LANG']['tl_member']['passChanged'] = array('Initialies Passwort geändert?', 'Wenn das Mitglied sein Passwort bereits geändert hat, ist diese CHeckbox gesetzt. Wenn Sie dieses Häkchen entfernen, wird das Mitglied gezwungen, ein neues Passwort zu vergeben.');
+$GLOBALS['TL_LANG']['tl_member']['passChanged'] = array('Initialies Passwort geändert?', 'Wenn das Mitglied sein Passwort bereits geändert hat, ist diese Checkbox gesetzt. Wenn Sie dieses Häkchen entfernen, wird das Mitglied gezwungen, ein neues Passwort zu vergeben.');

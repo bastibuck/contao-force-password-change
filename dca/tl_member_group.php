@@ -16,13 +16,11 @@ $GLOBALS['TL_DCA']['tl_member_group']['palettes']['default'] = str_replace (
   $GLOBALS['TL_DCA']['tl_member_group']['palettes']['default']
 );
 
-
 // Selectors
 $GLOBALS['TL_DCA']['tl_member_group']['palettes']['__selector__'][] = 'force_pass_change';
 
 // Subpalettes
 $GLOBALS['TL_DCA']['tl_member_group']['subpalettes']['force_pass_change'] = 'pass_change_jumpTo';
-
 
 // Fields
 $GLOBALS['TL_DCA']['tl_member_group']['fields']['force_pass_change'] = array

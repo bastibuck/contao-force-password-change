@@ -16,7 +16,6 @@ $GLOBALS['TL_DCA']['tl_member']['subpalettes']['login'] = str_replace (
   $GLOBALS['TL_DCA']['tl_member']['subpalettes']['login']
 );
 
-
 // Fields
 $GLOBALS['TL_DCA']['tl_member']['fields']['passChanged'] = array
 (

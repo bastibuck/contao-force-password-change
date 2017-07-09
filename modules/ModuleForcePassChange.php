@@ -11,8 +11,8 @@ namespace Bastibuck;
 
 class ModuleForcePassChange extends \ModuleChangePassword {
 
+  // change template to also display info text
   protected $strTemplate = 'mod_force_passchange';
-
 
   /**
    * Display a wildcard in the back end
