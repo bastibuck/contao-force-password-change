@@ -34,7 +34,7 @@ class ForcePassChangeHooks extends \Frontend
         }
       }
 
-      if($objPage->id != $jumpTo)
+      if($objPage->id != $jumpTo && isset($jumpTo))
       {
         // get jumpTo page
         $objJumpTo = \PageModel::findOneById($jumpTo);
